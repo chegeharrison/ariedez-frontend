@@ -18,8 +18,8 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-lg font-semibold mb-4">Locations</h3>
           <ul className="space-y-2">
-            <li>Nairobi</li>
-            <li>Upperhill, Britam Tower</li>
+            <li>Meru</li>
+            <li>Maua, HillCourt</li>
           </ul>
         </div>
 
@@ -27,7 +27,7 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-white">Cloud Solutions</a></li>
+            <li><a href="#" className="hover:text-white">Digital Empowerment</a></li>
             <li><a href="#" className="hover:text-white">IT Consultancy</a></li>
             <li><a href="#" className="hover:text-white">Data Management</a></li>
             <li><a href="#" className="hover:text-white">Cybersecurity</a></li>

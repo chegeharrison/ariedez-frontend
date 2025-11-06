@@ -28,6 +28,7 @@ export default function ServicesSection() {
     (process.env.NODE_ENV === "development"
       ? "http://127.0.0.1:8000/api/"
       : "https://ariedez-backend.onrender.com/api/");
+  console.log("Fetching from:", API_URL);
 
   // ✅ Fetch dynamic services
   useEffect(() => {
