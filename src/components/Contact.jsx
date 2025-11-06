@@ -92,7 +92,7 @@ export default function Contact() {
             <iframe
               title="map"
               className="w-full h-64 rounded-xl"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.860492309465!2d36.8065!3d-1.287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMTMuMiJTIDM2wrA0OCcwNC42IkU!5e0!3m2!1sen!2ske!4v1691234567890!5m2!1sen!2ske"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.6702916565196!2d37.94341756295495!3d0.2337877318993563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1788357be3029c01%3A0xcf59bb42b53a1efe!2sMaua%20Shopping%20Mall%20Meru!5e0!3m2!1sen!2ske!4v1762460030035!5m2!1sen!2ske" 
               loading="lazy"
             ></iframe>
           </div>

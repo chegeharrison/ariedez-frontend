@@ -22,13 +22,15 @@ export default function ServicesSection() {
   const [error, setError] = useState(null);
   const [selectedService, setSelectedService] = useState(null);
 
-  // ✅ Backend URL handling
+ // ✅ Backend URL handling
   const API_URL =
-    process.env.NEXT_PUBLIC_API_URL ||
+    process.env.NEXT_PUBLIC_API_URL ??
     (process.env.NODE_ENV === "development"
       ? "http://127.0.0.1:8000/api/"
       : "https://ariedez-backend.onrender.com/api/");
-  console.log("Fetching from:", API_URL);
+
+  console.log("🌍 Fetching from:", API_URL);
+
 
   // ✅ Fetch dynamic services
   useEffect(() => {
