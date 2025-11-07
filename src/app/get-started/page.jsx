@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ export default function Contact() {
       });
 
       if (res.ok) {
-        setStatus("Message sent successfully!");
+        setStatus("✅ Message sent successfully!");
         setFormData({
           first_name: "",
           last_name: "",
@@ -37,24 +38,57 @@ export default function Contact() {
           message: "",
         });
       } else {
-        setStatus("Failed to send message. Please try again.");
+        setStatus("❌ Failed to send message. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      setStatus("Something went wrong. Try again later.");
+      setStatus("⚠️ Something went wrong. Try again later.");
     }
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 px-6 py-12">
-      <div className="max-w-2xl w-full bg-white shadow-lg rounded-2xl p-8">
-        <h2 className="text-3xl font-bold text-blue-600 mb-4 text-center">
-          Get Started with Ariedez IT Solutions
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 bg-white text-gray-900">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/ml1.jpeg" // ✅ your background image
+          alt="Contact background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      {/* Overlay — light warm tint to make image visible but still readable */}
+      <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-3xl w-full bg-white/90 shadow-2xl rounded-2xl p-10 border border-gray-200 backdrop-blur-md">
+        <h2 className="text-3xl font-bold text-blue-900 mb-4 text-center">
+          Get in Touch with{" "}
+          <span className="text-yellow-500">Ariedez Systems</span>
         </h2>
-        <p className="text-gray-600 mb-8 text-center">
-          See what our managed and co-managed IT services can do for you.
+        <p className="text-gray-700 mb-8 text-center">
+          Have a question, idea, or collaboration proposal? We’d love to hear from you.
         </p>
 
+        {/* Contact Info */}
+        <div className="flex flex-wrap justify-center gap-6 mb-8 text-gray-700">
+          <div className="flex items-center gap-2">
+            <FaEnvelope className="text-yellow-500" />
+            <span>ariedezsystems@gmail.com</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaPhone className="text-yellow-500" />
+            <span>+254 735124963</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaMapMarkerAlt className="text-yellow-500" />
+            <span>Maua, Meru</span>
+          </div>
+        </div>
+
+        {/* Contact Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col md:flex-row gap-4">
             <input
@@ -64,7 +98,7 @@ export default function Contact() {
               value={formData.first_name}
               onChange={handleChange}
               required
-              className="flex-1 border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500"
+              className="flex-1 border border-gray-300 rounded-md px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
             <input
               name="last_name"
@@ -73,7 +107,7 @@ export default function Contact() {
               value={formData.last_name}
               onChange={handleChange}
               required
-              className="flex-1 border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500"
+              className="flex-1 border border-gray-300 rounded-md px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
           </div>
 
@@ -84,7 +118,7 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded-md px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
 
           <input
@@ -93,7 +127,7 @@ export default function Contact() {
             placeholder="Phone number"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded-md px-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           />
 
           <textarea
@@ -101,19 +135,19 @@ export default function Contact() {
             placeholder="How can we help you?"
             value={formData.message}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md px-4 py-2 h-32 focus:ring-2 focus:ring-blue-500"
+            className="w-full border border-gray-300 rounded-md px-4 py-3 h-32 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           ></textarea>
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-md font-semibold hover:bg-blue-700 transition-all"
+            className="w-full bg-yellow-500 text-blue-900 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-all"
           >
             Submit
           </button>
         </form>
 
         {status && (
-          <p className="text-center text-gray-700 mt-4 font-medium">{status}</p>
+          <p className="text-center text-blue-900 mt-4 font-medium">{status}</p>
         )}
       </div>
     </section>

@@ -73,7 +73,7 @@ export default function IncomeGeneration() {
               {
                 title: "Corporate Collaborations",
                 desc: "Partnering with tech companies and corporates to support innovation-driven projects and social impact programs.",
-                img: "/images/corporate-placeholder.jpg",
+                img: "/images/corporate-placeholder.jpeg",
               },
               {
                 title: "NGO & Donor Partnerships",
@@ -83,7 +83,7 @@ export default function IncomeGeneration() {
               {
                 title: "Government Projects",
                 desc: "Collaborating with county and national governments to empower youth and SMEs through digital innovation.",
-                img: "/images/government-placeholder.jpg",
+                img: "/images/government-placeholder.jpeg",
               },
             ].map((partner, index) => (
               <div

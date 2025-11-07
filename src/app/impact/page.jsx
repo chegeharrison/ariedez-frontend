@@ -98,21 +98,21 @@ export default function Impact() {
               role: "Women in Tech Graduate",
               story:
                 "Before joining Ariedez, I had never written a line of code. Now I lead a small team developing mobile apps for local SMEs.",
-              img: "/images/success1.jpg",
+              img: "/images/success1.jpeg",
             },
             {
               name: "David Otieno",
               role: "SME Digital Boost Beneficiary",
               story:
                 "Ariedez helped me digitize my retail business — today, 60% of our sales come through online channels.",
-              img: "/images/success2.jpg",
+              img: "/images/success2.jpeg",
             },
             {
               name: "Fatuma Hassan",
               role: "Innovation Hub Participant",
               story:
                 "Through mentorship and startup training, I launched a social enterprise connecting artisans with global markets.",
-              img: "/images/success3.jpg",
+              img: "/images/success3.webp",
             },
           ].map((person, index) => (
             <div

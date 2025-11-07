@@ -11,7 +11,7 @@ export default function BlogPage() {
       id: 1,
       title: "AI in Small Businesses: Transforming Local Economies",
       category: "Tech for Good",
-      image: "/images/blog1.jpg", // placeholder image
+      image: "/images/blog1.jpeg", // placeholder image
       excerpt:
         "Discover how small enterprises in Africa are using artificial intelligence to improve productivity, customer engagement, and profitability.",
     },
@@ -27,7 +27,7 @@ export default function BlogPage() {
       id: 3,
       title: "Ariedez Impact Stories: From Learners to Leaders",
       category: "Entrepreneurship Insights",
-      image: "/images/blog3.jpg",
+      image: "/images/blog3.jpeg",
       excerpt:
         "Real stories from our trainees and SMEs who turned their digital skills into thriving ventures through Ariedez programs.",
     },

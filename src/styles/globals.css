@@ -16,3 +16,7 @@ html {
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out forwards;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+}
