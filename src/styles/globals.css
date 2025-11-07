@@ -20,3 +20,8 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+/* styles/globals.css or app/globals.css */
+footer img[alt="Next.js Logo"] {
+  display: none !important;
+}
