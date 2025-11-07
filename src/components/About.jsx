@@ -261,29 +261,7 @@ export default function About() {
         </div>
       </div>
 
-      {/* ===== CALL TO ACTION ===== */}
-      <div className="bg-gray-900 text-white py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-6">Partner With Us</h2>
-        <p className="text-gray-300 max-w-2xl mx-auto mb-8">
-          Join Ariadez Systems Ltd in driving digital inclusion and
-          entrepreneurship across Africa. Together, we can build a future
-          powered by innovation and opportunity.
-        </p>
-        <div className="flex justify-center gap-6 flex-wrap">
-          <a
-            href="/contact"
-            className="px-8 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-md hover:bg-yellow-300 transition"
-          >
-            Partner With Us
-          </a>
-          <a
-            href="/donate"
-            className="px-8 py-3 border border-yellow-400 text-yellow-400 font-semibold rounded-md hover:bg-yellow-400 hover:text-blue-900 transition"
-          >
-            Donate
-          </a>
-        </div>
-      </div>
+      
     </section>
   );
 }

@@ -95,8 +95,8 @@ export default function Navbar() {
             Blog
           </Link>
 
-          <Link href="/donate" className="text-lg px-1 hover:text-yellow-400 transition">
-            Donate
+          <Link href="/partners" className="text-lg px-1 hover:text-yellow-400 transition">
+          Partnerships
           </Link>
 
           <Link

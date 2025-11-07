@@ -27,7 +27,7 @@ export default function ServicesSection() {
     process.env.NEXT_PUBLIC_API_URL ??
     (process.env.NODE_ENV === "development"
       ? "http://127.0.0.1:8000/api/"
-      : "https://ariedez-backend.onrender.com/api/");
+      : "https://ariedez-backend.onrender.com/");
 
   console.log("🌍 Fetching from:", API_URL);
 
